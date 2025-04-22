@@ -1,4 +1,15 @@
 {
+  "heading": {
+    "logoName": "Tekera",
+    "navItems": {
+      "home": "Ana Sayfa",
+      "about": "Hakkında",
+      "contact": "İletişim",
+      "services": "Hizmetler",
+      "features": "Özellikler"
+    }
+  },
+
   "HomePage": {
     "title": "Merhaba Dünya !"
   },

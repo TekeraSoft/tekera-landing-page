@@ -1,5 +1,20 @@
 {
+  "heading": {
+    "logoName": "Tekera",
+    "navItems": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "services": "Services",
+      "features": "Features"
+    }
+  },
   "HomePage": {
     "title": "Hello world!"
+  },
+  "warningText": {
+    "ButtonText": "Ana sayfaya git",
+    "pageNotFoundTitle": "Sayfa Bulunamadı",
+    "pageNotFoundText": "Aradığınız sayfa bulunamadı. Lütfen URL'yi kontrol edin veya anasayfaya geri dönün."
   }
 }

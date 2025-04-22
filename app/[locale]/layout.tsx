@@ -3,6 +3,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Locale, routing } from "@/i18n/routing";
 import "./globals.css";
+import MainLayout from "@/components/layouts/layout";
 
 // `locale` parametresinin tipi belirlenmeli
 export default async function RootLayout({
@@ -24,9 +25,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body suppressHydrationWarning>
+      <body
+        className="overflow-hidden overflow-y-auto bg-body"
+        suppressHydrationWarning
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <MainLayout> {children}</MainLayout>
         </NextIntlClientProvider>
       </body>
     </html>
