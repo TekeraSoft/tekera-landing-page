@@ -1,0 +1,10 @@
+{
+  "HomePage": {
+    "title": "Merhaba Dünya !"
+  },
+  "warningText": {
+    "ButtonText": "Ana sayfaya git",
+    "pageNotFoundTitle": "Sayfa Bulunamadı",
+    "pageNotFoundText": "Aradığınız sayfa bulunamadı. Lütfen URL'yi kontrol edin veya anasayfaya geri dönün."
+  }
+}
