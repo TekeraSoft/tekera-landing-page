@@ -3,9 +3,9 @@
     "logoName": "Tekera",
     "navItems": {
       "home": "Home",
-      "about": "About",
+      "about": "About Us",
       "contact": "Contact",
-      "services": "Services",
+      "projects": "Projects",
       "features": "Features"
     }
   },

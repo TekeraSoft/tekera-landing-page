@@ -9,7 +9,7 @@ function NavItems({ href, text }: NavItemsProps) {
   return (
     <li>
       <a
-        className="duration-300 font-medium ease-linear hover:text-primary py-3"
+        className="duration-300 font-medium ease-linear hover:text-primary py-3 "
         href={href}
       >
         {text}

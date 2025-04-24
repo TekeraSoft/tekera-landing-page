@@ -3,9 +3,9 @@
     "logoName": "Tekera",
     "navItems": {
       "home": "Ana Sayfa",
-      "about": "Hakkında",
+      "about": "Hakkımızda",
+      "projects": "Projeler",
       "contact": "İletişim",
-      "services": "Hizmetler",
       "features": "Özellikler"
     }
   },
