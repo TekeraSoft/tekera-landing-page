@@ -4,7 +4,8 @@ import Container from "@/components/shared/Container";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
-import logo from "../../../public/assets/icon.svg";
+import darkLogo from "../../../public/images/icondark.png";
+import whiteLogo from "../../../public/images/iconwhite.png";
 import NavItem from "./NavItem";
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
@@ -49,7 +50,7 @@ function Navbar() {
   };
 
   return (
-    <header className="fixed bg-body inset-x-0 top-0 z-50 py-3  md:py-6">
+    <header className="fixed bg-body inset-x-0 top-0 z-50 py-3 ">
       <div className="flex md:hidden">
         <div
           className={`${
@@ -72,15 +73,12 @@ function Navbar() {
           {/* Logo */}
           <div className="min-w-max inline-flex items-center gap-1 relative">
             <Image
-              src={logo}
+              src={theme === "dark" ? darkLogo : whiteLogo}
               alt="Tekera Teklonogy Logo"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
               priority
             />
-            <div className="inline-flex text-lg font-semibold text-heading-1">
-              {t("logoName")}
-            </div>
           </div>
 
           <div className="hidden md:flex">

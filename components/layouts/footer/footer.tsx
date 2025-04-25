@@ -1,7 +1,10 @@
+"use client";
+
 import Container from "@/components/shared/Container";
 import Image from "next/image";
 import React from "react";
-import logo from "../../../public/assets/icon.svg";
+import darkLogo from "../../../public/images/icondark.png";
+import whiteLogo from "../../../public/images/iconwhite.png";
 import { useTranslations } from "next-intl";
 import NavItems from "../navbar/NavItem";
 import {
@@ -11,9 +14,11 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import useThemeStore from "@/store/ThemeStore";
 
 function Footer() {
   const t = useTranslations();
+  const { theme } = useThemeStore();
 
   const navItems = [
     {
@@ -60,8 +65,11 @@ function Footer() {
           {/* Logo ve Hakkımızda */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Image src={logo} alt="company logo" className="w-14 h-14" />
-              <span className="text-xl font-semibold">Tekera</span>
+              <Image
+                src={theme === "dark" ? darkLogo : whiteLogo}
+                alt="company logo"
+                className="w-20 h-20"
+              />
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
               {t("footer.companyDesc")}
