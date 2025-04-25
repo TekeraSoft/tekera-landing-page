@@ -7,7 +7,7 @@ function NotFoundPage() {
   const t = useTranslations();
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen text-center p-6 sfgsfg">
       {/* İkon ile başlık */}
       <FaRegSadTear className="text-6xl text-gray-500 mb-4" />
       <h1 className="text-4xl font-bold text-gray-800 mb-4">
