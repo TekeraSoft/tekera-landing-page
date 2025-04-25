@@ -11,9 +11,11 @@ import {
 import Paragraph from "../shared/Paragraph";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 
 export const AboutSection = () => {
   gsap.registerPlugin(ScrollTrigger);
+  const t = useTranslations("About");
 
   useEffect(() => {
     gsap.fromTo(
@@ -26,51 +28,49 @@ export const AboutSection = () => {
       }
     );
   }, []);
-  const vizyonumuz = [
-    "Tekera olarak, teknolojiyi herkes için erişilebilir hale getirmeyi hedefliyoruz. Sürekli olarak gelişen ve değişen dünyaya ayak uydurabilen, yenilikçi projeler üreterek her sektörde sürdürülebilir çözümler sunmayı amaçlıyoruz. Amacımız, her işletmeye katma değer sağlayarak büyümelerine yardımcı olmak ve sektörlerinde lider olmalarını desteklemektir.",
-  ];
 
   const nelerYapiyoruz = [
     {
       icon: <FaHandshake className="text-primary" />,
-      text: "İşletmelerin verimliliğini artıracak projeler geliştiriyoruz.",
+      text: t("WhatWeDo.company"),
     },
     {
       icon: <FaLaptopCode className="text-primary" />,
-      text: "Web ve mobil uygulamalarla müşterilere kolay ve hızlı çözümler sunuyoruz.",
+      text: t("WhatWeDo.webMob"),
     },
     {
       icon: <FaUsers className="text-primary" />,
-      text: "Takım çalışmasıyla projelerin her aşamasında etkili bir iletişim sağlıyoruz.",
+      text: t("WhatWeDo.team"),
     },
     {
       icon: <FaRegLightbulb className="text-primary" />,
-      text: "Yaratıcı ve yenilikçi projelerle sektöre değer katacak çözümler üretiyoruz.",
+      text: t("WhatWeDo.creative"),
     },
     {
       icon: <FaLaptopCode className="text-primary" />,
-      text: "Yazılım çözümleri ile işletmelerin dijital altyapılarını güçlendiriyoruz.",
+      text: t("WhatWeDo.solution"),
     },
   ];
 
   const degerlerimiz = [
     {
       icon: <FaHandshake className="text-primary" />,
-      text: "Güven: Müşterilerimize güvenilir, kaliteli ve doğru çözümler sunmak.",
+      text: t("OurValues.value1"),
     },
     {
       icon: <FaHandshake className="text-primary" />,
-      text: "İnovasyon: Sürekli yenilikçi projelerle sektörlerde fark yaratmak.",
+      text: t("OurValues.value2"),
     },
     {
       icon: <FaHandshake className="text-primary" />,
-      text: "Müşteri Odaklılık: Müşterilerimizin ihtiyaçlarına en iyi şekilde çözüm sağlamak.",
+      text: t("OurValues.value3"),
     },
     {
       icon: <FaHandshake className="text-primary" />,
-      text: "Sürdürülebilirlik: Çevre dostu ve sürdürülebilir iş süreçleriyle geleceğe yatırım yapmak.",
+      text: t("OurValues.value4"),
     },
   ];
+
   return (
     <section
       id="about"
@@ -84,20 +84,19 @@ export const AboutSection = () => {
       <Container className="flex flex-col h-screen w-full justify-center items-center gap-6 lg:gap-10">
         <div className="text-center lg:text-left w-full">
           <h2 className="text-xl md:text-3xl font-semibold mb-4 text-heading-1">
-            Biz Kimiz
+            {t("title")}
+
             <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-violet-400">
-              Tekera Teknoloji
+              {t("titleRgb")}
             </span>
           </h2>
           <Paragraph className="text-xs md:text-sm text-start mb-6">
-            Tekera, işletmelerin dijital dönüşümüne öncülük eden bir teknoloji
-            firmasıdır. Teknolojik yeniliklerimizle iş süreçlerinizi daha
-            verimli hale getiriyoruz.
+            {t("paragraph")}
           </Paragraph>
 
           <div className="mt-8">
             <h3 className="text-lg md:text-xl font-semibold text-primary mb-4">
-              Neler Yapıyoruz?
+              {t("WhatWeDo.title")}
             </h3>
             <ul className="space-y-4 text-left">
               {nelerYapiyoruz.map((item, index) => (
@@ -113,16 +112,16 @@ export const AboutSection = () => {
 
           <div className="mt-8">
             <h3 className="text-lg md:text-xl font-semibold text-primary mb-4">
-              Vizyonumuz
+              {t("visionTitle")}
             </h3>
             <Paragraph className="text-left text-xs md:text-sm lg:text-base mb-6">
-              {vizyonumuz}
+              {t("visionText")}
             </Paragraph>
           </div>
 
           <div className="mt-8">
             <h3 className="text-lg md:text-xl font-semibold text-primary mb-4">
-              Değerlerimiz
+              {t("OurValues.title")}
             </h3>
             <ul className="space-y-4 text-left">
               {degerlerimiz.map((item, index) => (

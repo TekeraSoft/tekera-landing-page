@@ -4,35 +4,35 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaTools, FaTshirt } from "react-icons/fa";
-import { FiArrowUpRight } from "react-icons/fi";
 import Container from "../shared/Container";
 import Paragraph from "../shared/Paragraph";
 import Image from "next/image";
-import Link from "next/link";
 import BtnLink from "../ui/BtnLink";
-
-const projects = [
-  {
-    id: 1,
-    name: "ArzuAmber",
-    description: "Kadın modasına özel modern bir e-ticaret platformu.",
-    image: "/images/arzuamber.png", // Görsel yolu
-    icon: <FaTshirt className="text-3xl text-teal-500" />,
-    link: "https://arzuamber.com", // örnek link
-  },
-  {
-    id: 2,
-    name: "Yeni Proje",
-    description: "Yeni projemiz çok yakında burada yer alacak!",
-    image: "/images/coming-soon.jpg", // Bulanık ya da inşaat temalı bir görsel
-    icon: <FaTools className="text-3xl text-gray-400" />,
-    link: "#",
-    comingSoon: true,
-  },
-];
+import { useTranslations } from "next-intl";
 
 const ProjectsSection = () => {
+  const t = useTranslations("Projects");
   gsap.registerPlugin(ScrollTrigger);
+
+  const projects = [
+    {
+      id: 1,
+      name: t("project1.name"), // Dinamik olarak gelen proje adı
+      description: t("project1.description"), // Dinamik olarak gelen açıklama
+      image: "/images/arzuamber.png", // Görsel yolu
+      icon: <FaTshirt className="text-3xl text-teal-500" />,
+      link: "https://arzuamber.com", // örnek link
+    },
+    {
+      id: 2,
+      name: t("project2.name"), // Dinamik olarak gelen proje adı
+      description: t("project2.description"), // Dinamik olarak gelen açıklama
+      image: "/images/coming-soon.jpg", // Bulanık ya da inşaat temalı bir görsel
+      icon: <FaTools className="text-3xl text-gray-400" />,
+      link: "#",
+      comingSoon: true,
+    },
+  ];
 
   useEffect(() => {
     gsap.fromTo(
@@ -50,7 +50,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="relative h-[80vh] flex flex-col justify-center items-center "
+      className="relative h-screen flex flex-col justify-center items-center "
     >
       {/* Arka plan efektleri */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
@@ -59,14 +59,11 @@ const ProjectsSection = () => {
       </div>
 
       <Container className="text-center ">
-        <h2 className="text-4xl font-bold text-heading-1 mb-4">Projelerimiz</h2>
-        <Paragraph>
-          Tekera Teknoloji olarak farklı sektörlere özel modern çözümler
-          geliştiriyoruz.
-        </Paragraph>
+        <h2 className="text-4xl font-bold text-heading-1 mb-4">{t("head")}</h2>
+        <Paragraph>{t("paragraph")}</Paragraph>
       </Container>
 
-      <Container className="grid grid-cols-1 md:grid-cols-2  gap-10">
+      <Container className="grid grid-cols-1 md:grid-cols-2  gap-10  mt-4">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -88,7 +85,7 @@ const ProjectsSection = () => {
             <BtnLink
               blank
               href={project.link}
-              text="Siteyi Gör"
+              text={t("BtnText")}
               claassName="mt-auto inline-flex items-center text-teal-400 hover:text-violet-400 transition font-medium"
             />
           </div>

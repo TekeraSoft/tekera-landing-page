@@ -6,8 +6,10 @@ import Paragraph from "../shared/Paragraph";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 
 export const InnovationSection = () => {
+  const t = useTranslations("Innovation");
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -62,29 +64,28 @@ export const InnovationSection = () => {
 
         <div className="text-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white text-heading-1">
-            Yenilikçi Çözümler
+            {t("title")}
+
             <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-violet-400">
-              Geleceği Şekillendir
+              {t("titleRgb")}
             </span>
           </h2>
           <Paragraph className="text-sm md:text-base">
-            Teknolojiyi ve inovasyonu birleştirerek işletmelerin dijital
-            dönüşümüne katkı sağlıyoruz. Yaratıcı çözümlerimizle geleceğin
-            dünyasına adım atın.
+            {t("paragraph")}
           </Paragraph>
         </div>
 
         {/* Kartlar */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-5xl mt-10">
           {[
-            { icon: <FaLightbulb />, title: "Akıllı Çözümler" },
-            { icon: <FaCogs />, title: "Dijital Zekâ" },
-            { icon: <FaRocket />, title: "Girişim Hızı" },
-            { icon: <FaRobot />, title: "Yapay Zeka" },
+            { icon: <FaLightbulb />, title: t("icontitle1") },
+            { icon: <FaCogs />, title: t("icontitle2") },
+            { icon: <FaRocket />, title: t("icontitle3") },
+            { icon: <FaRobot />, title: t("icontitle4") },
           ].map((item, index) => (
             <div
               key={index}
-              className="innovation-card flex flex-col items-center justify-center bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl p-6 text-white shadow-lg transition-transform hover:scale-105"
+              className="innovation-card flex flex-col items-center justify-center bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl py-7 px-2 text-center text-white shadow-lg transition-transform hover:scale-105"
             >
               <div className="text-4xl mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold">{item.title}</h3>

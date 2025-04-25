@@ -100,7 +100,6 @@ function Navbar() {
               </ul>
             </div>
           </div>
-          {/* Hamburger Icon */}
 
           <div className="min-w-max flex items-center gap-x-3">
             <div
@@ -117,14 +116,14 @@ function Navbar() {
               </button>
               {isLangDropdownOpen && (
                 <ul
-                  className="absolute top-8 w-10 bg-white border rounded shadow-md text-sm"
+                  className="absolute top-8 w-10 bg-white border border-slate-300  rounded shadow-md text-sm "
                   onMouseEnter={() => setIsLangDropdownOpen(true)}
                 >
                   {supportedLocales.map((lang, index) => (
                     <li key={index}>
                       <button
                         onClick={() => changeLanguage(lang)}
-                        className="block w-full py-1 text-black text-center rounded transition-all duration-300 cursor-pointer"
+                        className="block w-full py-1 text-black text-center rounded  transition-all duration-300 cursor-pointer hover:bg-black  hover:text-white "
                       >
                         {lang === "tr" ? "TR" : "EN"}
                       </button>

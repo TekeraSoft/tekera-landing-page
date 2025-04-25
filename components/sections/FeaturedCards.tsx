@@ -12,8 +12,11 @@ import {
   FaRocket,
 } from "react-icons/fa";
 import gsap from "gsap";
+import { useTranslations } from "next-intl";
 
 function FeaturedCards() {
+  const t = useTranslations("FeaturedCards");
+
   useEffect(() => {
     gsap.fromTo(
       "#fatured-cards",
@@ -34,33 +37,33 @@ function FeaturedCards() {
   const features = [
     {
       icon: FaBrain,
-      title: "Dijital Zekâ",
-      description: "Veriyle yönlendirilen kararlarla işinizi ileriye taşıyın.",
+      title: t("digitalIntelligence.title"),
+      description: t("digitalIntelligence.description"),
     },
     {
       icon: FaCloudSun,
-      title: "Akıllı Bulut",
-      description: "Her yerden erişim, maksimum performans ve esneklik.",
+      title: t("smartCloud.title"),
+      description: t("smartCloud.description"),
     },
     {
       icon: FaLock,
-      title: "Güçlü Güvenlik",
-      description: "Verilerinizi en yeni teknolojilerle koruyun.",
+      title: t("strongSecurity.title"),
+      description: t("strongSecurity.description"),
     },
     {
       icon: FaCogs,
-      title: "Otomasyon Gücü",
-      description: "Tekrarlayan işleri otomatikleştirerek zaman kazanın.",
+      title: t("creativity.title"),
+      description: t("creativity.description"),
     },
     {
       icon: FaRocket,
-      title: "Hızlı Gelişim",
-      description: "Projelerinizi kısa sürede başarıya ulaştırın.",
+      title: t("automationPower.title"),
+      description: t("digitalIntelligence.description"),
     },
     {
       icon: FaLightbulb,
-      title: "Yaratıcılık",
-      description: "Fikirlerinizi dijital çözümlerle hayata geçirin.",
+      title: t("fastDevelopment.title"),
+      description: t("fastDevelopment.description"),
     },
   ];
 

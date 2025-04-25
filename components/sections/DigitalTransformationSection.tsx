@@ -7,8 +7,10 @@ import Image from "next/image";
 import Container from "../shared/Container";
 import Paragraph from "../shared/Paragraph";
 import { FiCheckCircle } from "react-icons/fi";
+import { useTranslations } from "next-intl";
 
 export const DigitalTransformationSection = () => {
+  const t = useTranslations("DigitalTransformation");
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -54,29 +56,26 @@ export const DigitalTransformationSection = () => {
         {/* Sağ: İçerik */}
         <div className="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left">
           <h2 className="text-2xl md:text-4xl font-bold text-heading-1">
-            Dijital Dönüşümle
+            {t("title")}
+
             <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">
-              Güçlenin
+              {t("titleRgb")}
             </span>
           </h2>
-          <Paragraph>
-            Modern teknolojilerle işinizi geleceğe taşıyın. Dijital çözümlerimiz
-            ile rekabet gücünüzü artırın, operasyonel verimliliği en üst düzeye
-            çıkarın.
-          </Paragraph>
+          <Paragraph>{t("paragraph")}</Paragraph>
 
           <ul className="text-muted-foreground list-disc pl-5 space-y-2 text-left text-heading-3">
             <li className="flex items-center gap-2">
               <FiCheckCircle className="text-heading-2" />
-              Ölçeklenebilir yazılım altyapıları
+              {t("check1")}
             </li>
             <li className="flex items-center gap-2">
               <FiCheckCircle className="text-heading-2" />
-              Veri tabanlı karar destek sistemleri
+              {t("check2")}
             </li>
             <li className="flex items-center gap-2">
               <FiCheckCircle className="text-heading-2" />
-              Bulut çözümleri ile esnek yönetim
+              {t("check3")}
             </li>
           </ul>
         </div>

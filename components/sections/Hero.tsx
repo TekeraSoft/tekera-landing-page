@@ -2,8 +2,11 @@ import React from "react";
 import Container from "../shared/Container";
 import Paragraph from "../shared/Paragraph";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function Hero() {
+  const t = useTranslations("Hero");
+
   return (
     <section className="relative h-[70vh] mt-28 md:mt-32 flex justify-center items-center">
       <Container className="flex flex-col lg:flex-row gap-5 lg:gap-12">
@@ -13,16 +16,13 @@ function Hero() {
         </div>
         <div className="relative flex flex-col items-center text-center lg:text-left lg:py-8 lg:items-start lg:max-w-none max-w-3xl">
           <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">
-            Tekera Teknoloji ile
+            {t("title")}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-violet-400 ml-2">
-              Geleceğin Teknolojisini Keşfedin
+              {t("titleRgb")}
             </span>
           </h1>
           <Paragraph className="mt-3 md:mt-8 text-xs text-start ">
-            Tekera Teknoloji, iş süreçlerinizi dijitalleştirerek geleceğin
-            teknolojileriyle güçlendirir. Yapay zeka, bulut çözümleri ve dijital
-            dönüşüm hizmetlerimizle, işletmenizi rekabetçi bir hale getirin ve
-            verimliliğinizi artırın.
+            {t("paragraph")}
           </Paragraph>
         </div>
         <div className="flex flex-1 lg:w-1/2 h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">

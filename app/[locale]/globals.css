@@ -49,6 +49,7 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+  transition: background-color 0.2s ease, color 0.3s ease;
 }
 
 li {

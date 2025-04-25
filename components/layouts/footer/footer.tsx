@@ -13,20 +13,20 @@ import {
 } from "react-icons/fa";
 
 function Footer() {
-  const t = useTranslations("heading");
+  const t = useTranslations();
 
   const navItems = [
     {
       href: "#",
-      text: t("navItems.home"),
+      text: t("heading.navItems.home"),
     },
     {
       href: "#projects",
-      text: t("navItems.projects"),
+      text: t("heading.navItems.projects"),
     },
     {
       href: "#about-us",
-      text: t("navItems.about"),
+      text: t("heading.navItems.about"),
     },
   ];
 
@@ -64,9 +64,7 @@ function Footer() {
               <span className="text-xl font-semibold">Tekera</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Tekera, işletmelerin dijital dönüşümüne öncülük eden bir teknoloji
-              firmasıdır. Web, yapay zekâ ve veri çözümleriyle geleceğe yön
-              verir.
+              {t("footer.companyDesc")}
             </p>
           </div>
           {/* Navigasyon */}
@@ -115,7 +113,7 @@ function Footer() {
 
         {/* Telif hakkı */}
         <div className="mt-12 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Tekera. Tüm hakları saklıdır.
+          © {new Date().getFullYear()} {t("footer.copyright")}
         </div>
       </Container>
     </footer>

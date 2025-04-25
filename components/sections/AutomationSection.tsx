@@ -11,8 +11,10 @@ import {
 import Paragraph from "../shared/Paragraph";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 
 export const AutomationSection = () => {
+  const t = useTranslations("Automation");
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -60,18 +62,13 @@ export const AutomationSection = () => {
 
         <div className="flex flex-col text-center lg:text-left w-full max-w-3xl">
           <h2 className="text-2xl md:text-4xl font-bold mb-6 text-heading-1">
-            Kendi Projelerimizle Yüksek Performanslı Akıllı Otomasyon
+            {t("title")}
+
             <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-violet-400">
-              Çözümlerimiz
+              {t("titleRgb")}
             </span>
           </h2>
-          <Paragraph className="text-sm">
-            Biz, kendi projelerimizde güçlü otomasyon çözümleri geliştirerek iş
-            süreçlerini daha verimli hale getirmeye çalışıyoruz. Zaman
-            kazandıran, hataları azaltan ve maliyetleri kontrol altına alan
-            sistemlerimizle, işlerimizi en verimli şekilde yönetmeye
-            odaklanıyoruz.
-          </Paragraph>
+          <Paragraph className="text-sm">{t("paragraph")}</Paragraph>
         </div>
 
         {/* Projelerimiz */}
@@ -79,35 +76,23 @@ export const AutomationSection = () => {
           <div className="feature-card p-6 bg-white/10 rounded-lg backdrop-blur shadow-md text-center">
             <FaClock className="text-3xl mx-auto text-teal-400 mb-4" />
             <h3 className="font-semibold text-lg mb-2 text-heading-3">
-              Zamanı Verimli Kullanalım
+              {t("cardTitle1")}
             </h3>
-            <Paragraph className="text-sm">
-              Geliştirdiğimiz otomasyon çözümleri ile projelerimizde zamanı en
-              verimli şekilde kullanıyoruz. İş süreçlerini hızlandırarak her
-              dakikayı daha değerli hale getiriyoruz.
-            </Paragraph>
+            <Paragraph className="text-sm">{t("cardDesc1")}</Paragraph>
           </div>
           <div className="feature-card p-6 bg-white/10 rounded-lg backdrop-blur shadow-md text-center">
             <FaRegCheckCircle className="text-3xl mx-auto text-purple-400 mb-4" />
             <h3 className="font-semibold text-lg mb-2 text-heading-3">
-              Hataları Azaltmak
+              {t("cardTitle2")}
             </h3>
-            <Paragraph className="text-sm">
-              Projelerimizde otomasyon sayesinde hataları minimize ediyor ve
-              süreçlerin doğruluğunu artırıyoruz. Hem güvenliği sağlıyor hem de
-              verimliliği arttırıyoruz.
-            </Paragraph>
+            <Paragraph className="text-sm">{t("cardDesc2")}</Paragraph>
           </div>
           <div className="feature-card p-6 bg-white/10 rounded-lg backdrop-blur shadow-md text-center">
             <FaMoneyBillWave className="text-3xl mx-auto text-pink-400 mb-4" />
             <h3 className="font-semibold text-lg mb-2 text-heading-3">
-              Maliyetleri Kontrol Altına Alalım
+              {t("cardTitle3")}
             </h3>
-            <Paragraph className="text-sm">
-              Kendi projelerimizde maliyetleri azaltmak için verimli iş
-              süreçleri geliştiriyoruz. Düşük bütçelerle yüksek performans elde
-              etmenin yollarını arıyoruz.
-            </Paragraph>
+            <Paragraph className="text-sm">{t("cardDesc3")}</Paragraph>
           </div>
         </div>
 

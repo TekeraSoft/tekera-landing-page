@@ -16,5 +16,120 @@
     "ButtonText": "Ana sayfaya git",
     "pageNotFoundTitle": "Sayfa Bulunamadı",
     "pageNotFoundText": "Aradığınız sayfa bulunamadı. Lütfen URL'yi kontrol edin veya anasayfaya geri dönün."
+  },
+
+  "Hero": {
+    "title": "With Tekera Technology",
+    "titleRgb": "Discover the Technology of the Future",
+    "paragraph": "Tekera Technology empowers your business by digitizing your processes with future-ready technologies. Enhance your competitiveness and increase efficiency with our AI, cloud solutions, and digital transformation services."
+  },
+
+  "About": {
+    "title": "Who We Are",
+    "titleRgb": "Tekera Technology",
+    "paragraph": "Tekera is a technology company leading the digital transformation of businesses. With our technological innovations, we make your business processes more efficient.",
+    "visionTitle": "Our Vision",
+    "visionText": "As Tekera, we aim to make technology accessible to everyone. We aim to provide sustainable solutions in every sector by creating innovative projects that can keep up with the constantly evolving world. Our goal is to add value to every business, help them grow, and support them in becoming leaders in their industries.",
+    "OurValues": {
+      "title": "Our Values",
+      "value1": "Trust: Providing reliable, quality, and accurate solutions to our customers.",
+      "value2": "Innovation: Creating a difference in industries with constantly innovative projects.",
+      "value3": "Customer Focus: Providing the best solutions to our customers' needs.",
+      "value4": "Sustainability: Investing in future with eco-friendly and sustainable business processes."
+    },
+    "WhatWeDo": {
+      "title": "What We Do",
+      "company": "We develop projects that increase business efficiency.",
+      "webMob": "We provide fast and easy solutions with web and mobile applications.",
+      "team": "We ensure effective communication at every stage of the project through teamwork.",
+      "creative": "We create innovative solutions that add value to the industry.",
+      "solution": "We strengthen businesses' digital infrastructure with software solutions."
+    }
+  },
+
+  "DigitalTransformation": {
+    "title": "Empower with",
+    "titleRgb": "Digital Transformation",
+    "paragraph": "Take your business into the future with modern technologies. Our digital solutions will boost your competitive edge and maximize operational efficiency.",
+    "check1": "Scalable software infrastructures",
+    "check2": "Data-driven decision support systems",
+    "check3": "Flexible management with cloud solutions"
+  },
+
+  "BusinessAnalytics": {
+    "title": "Powerful",
+    "titleRgb": "Data Analytics",
+    "title2": "Make the Right Decisions on Time",
+    "paragraph": "Our business intelligence tools help you turn massive data sets into meaningful insights, allowing you to take more strategic steps.",
+    "check1": "Detailed reporting dashboards",
+    "check2": "Trend and forecast analyses",
+    "check3": "Real-time data tracking and visualization"
+  },
+
+  "Automation": {
+    "title": "High-Performance Smart Automation with Our Projects",
+    "titleRgb": "Our Solutions",
+    "paragraph": "We focus on making business processes more efficient by developing powerful automation solutions in our own projects. With systems that reduce time, minimize errors, and control costs, we aim to manage our work in the most efficient way possible.",
+    "cardTitle1": "Let’s Use Time Efficiently",
+    "cardDesc1": "With the automation solutions we develop, we use time in the most efficient way in our projects. We accelerate business processes, making every minute more valuable.",
+    "cardTitle2": "Reducing Errors",
+    "cardDesc2": "Thanks to automation, we minimize errors and improve the accuracy of processes. We ensure security and increase productivity.",
+    "cardTitle3": "Let’s Control Costs",
+    "cardDesc3": "We develop efficient business processes to reduce costs in our projects. We seek ways to achieve high performance with low budgets."
+  },
+
+  "Innovation": {
+    "title": "Innovative Solutions",
+    "titleRgb": "Shape the Future",
+    "paragraph": "We contribute to the digital transformation of businesses by combining technology and innovation. Step into the future world with our creative solutions.",
+    "icontitle1": "Smart Solutions",
+    "icontitle2": "Digital Intelligence",
+    "icontitle3": "Entrepreneurship Speed",
+    "icontitle4": "Artificial Intelligence"
+  },
+
+  "Projects": {
+    "head": "Our Projects",
+    "paragraph": "At Tekera Teknoloji, we develop modern solutions tailored to various industries.",
+    "BtnText": "View Site",
+    "project1": {
+      "description": "A modern e-commerce platform dedicated to women's fashion.",
+      "name": "ArzuAmber"
+    },
+    "project2": {
+      "description": "Our new project will be available here soon!",
+      "name": "New Project"
+    }
+  },
+
+  "FeaturedCards": {
+    "digitalIntelligence": {
+      "title": "Digital Intelligence",
+      "description": "Take your business forward with data-driven decisions."
+    },
+    "smartCloud": {
+      "title": "Smart Cloud",
+      "description": "Access from anywhere, maximum performance, and flexibility."
+    },
+    "strongSecurity": {
+      "title": "Strong Security",
+      "description": "Protect your data with the latest technologies."
+    },
+    "automationPower": {
+      "title": "Automation Power",
+      "description": "Save time by automating repetitive tasks."
+    },
+    "fastDevelopment": {
+      "title": "Fast Development",
+      "description": "Get your projects to success in a short time."
+    },
+    "creativity": {
+      "title": "Creativity",
+      "description": "Bring your ideas to life with digital solutions."
+    }
+  },
+  "footer": {
+    "companyDesc": "Tekera is a technology company leading the digital transformation. It shapes the future with web and data solutions.",
+    "copyright": "Tekera. All rights reserved."
   }
 }

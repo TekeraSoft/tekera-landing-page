@@ -7,8 +7,10 @@ import Image from "next/image";
 import Container from "../shared/Container";
 import Paragraph from "../shared/Paragraph";
 import { FiCheckCircle } from "react-icons/fi";
+import { useTranslations } from "next-intl";
 
 export const BusinessAnalyticsSection = () => {
+  const t = useTranslations("BusinessAnalytics");
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -54,36 +56,33 @@ export const BusinessAnalyticsSection = () => {
         {/* Sol: İçerik */}
         <div className="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left">
           <div className="text-2xl md:text-4xl font-bold text-heading-1">
-            Güçlü
+            {t("title")}
+
             <span className="mx-2 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-violet-400">
-              Veri Analizi
+              {t("titleRgb")}
             </span>
-            ile
             <h3
               className="text-lg
            md:text-2xl font-semibold text-muted-foreground text-heading-2"
             >
-              Doğru Kararları Zamanında Verin
+              {t("title2")}
             </h3>
           </div>
 
-          <Paragraph>
-            İş zekası araçlarımız, büyük veri yığınlarını anlamlı içgörülere
-            dönüştürerek daha stratejik adımlar atmanızı sağlar.
-          </Paragraph>
+          <Paragraph>{t("paragraph")}</Paragraph>
 
           <ul className="text-muted-foreground list-disc pl-5 space-y-2 text-left text-heading-2">
             <li className="flex items-center gap-2">
               <FiCheckCircle className="text-heading-2" />
-              Detaylı raporlama panelleri
+              {t("check1")}
             </li>
             <li className="flex items-center gap-2">
               <FiCheckCircle className="text-heading-2" />
-              Trend ve tahmin analizleri
+              {t("check2")}
             </li>
             <li className="flex items-center gap-2">
               <FiCheckCircle className="text-heading-2" />
-              Anlık veri takibi ve görselleştirme
+              {t("check3")}
             </li>
           </ul>
         </div>

@@ -17,5 +17,121 @@
     "ButtonText": "Ana sayfaya git",
     "pageNotFoundTitle": "Sayfa Bulunamadı",
     "pageNotFoundText": "Aradığınız sayfa bulunamadı. Lütfen URL'yi kontrol edin veya anasayfaya geri dönün."
+  },
+
+  "Hero": {
+    "title": "Tekera Teknoloji ile",
+    "titleRgb": "Geleceğin Teknolojisini Keşfedin",
+    "paragraph": "Tekera Teknoloji, iş süreçlerinizi dijitalleştirerek geleceğin teknolojileriyle güçlendirir. Yapay zeka, bulut çözümleri ve dijital dönüşüm hizmetlerimizle, işletmenizi rekabetçi bir hale getirin ve verimliliğinizi artırın."
+  },
+
+  "About": {
+    "title": "Biz Kimiz",
+    "titleRgb": "Tekera Teknoloji",
+    "paragraph": "Tekera, işletmelerin dijital dönüşümüne öncülük eden bir teknoloji firmasıdır. Teknolojik yeniliklerimizle iş süreçlerinizi daha verimli hale getiriyoruz.",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Tekera olarak, teknolojiyi herkes için erişilebilir hale getirmeyi hedefliyoruz. Sürekli olarak gelişen ve değişen dünyaya ayak uydurabilen, yenilikçi projeler üreterek her sektörde sürdürülebilir çözümler sunmayı amaçlıyoruz. Amacımız, her işletmeye katma değer sağlayarak büyümelerine yardımcı olmak ve sektörlerinde lider olmalarını desteklemektir.",
+    "OurValues": {
+      "title": "Değerlerimiz",
+      "value1": "Güven: Müşterilerimize güvenilir, kaliteli ve doğru çözümler sunmak.",
+      "value2": "İnovasyon: Sürekli yenilikçi projelerle sektörlerde fark yaratmak.",
+      "value3": "Müşteri Odaklılık: Müşterilerimizin ihtiyaçlarına en iyi şekilde çözüm sağlamak.",
+      "value4": "Sürdürülebilirlik: Çevre dostu ve sürdürülebilir iş süreçleriyle geleceğe yatırım yapmak."
+    },
+    "WhatWeDo": {
+      "title": "Neler Yapıyoruz?",
+      "company": "İşletmelerin verimliliğini artıracak projeler geliştiriyoruz.",
+      "webMob": "Web ve mobil uygulamalarla müşterilere kolay ve hızlı çözümler sunuyoruz.",
+      "team": "Takım çalışmasıyla projelerin her aşamasında etkili bir iletişim sağlıyoruz.",
+      "creative": "Yaratıcı ve yenilikçi projelerle sektöre değer katacak çözümler üretiyoruz.",
+      "solution": "Yazılım çözümleri ile işletmelerin dijital altyapılarını güçlendiriyoruz."
+    }
+  },
+
+  "DigitalTransformation": {
+    "title": "Dijital Dönüşümle",
+    "titleRgb": "Güçlenin",
+    "paragraph": "Modern teknolojilerle işinizi geleceğe taşıyın. Dijital çözümlerimiz ile rekabet gücünüzü artırın, operasyonel verimliliği en üst düzeye çıkarın.",
+    "check1": "Ölçeklenebilir yazılım altyapıları",
+    "check2": "Veri tabanlı karar destek sistemleri",
+    "check3": "Bulut çözümleri ile esnek yönetim"
+  },
+
+  "BusinessAnalytics": {
+    "title": "Güçlü",
+    "titleRgb": "Veri Analizi",
+    "title2": "ile Doğru Kararları Zamanında Verin",
+    "paragraph": "İş zekası araçlarımız, büyük veri yığınlarını anlamlı içgörülere dönüştürerek daha stratejik adımlar atmanızı sağlar.",
+    "check1": "Detaylı raporlama panelleri",
+    "check2": "Trend ve tahmin analizleri",
+    "check3": "Anlık veri takibi ve görselleştirme"
+  },
+
+  "Automation": {
+    "title": "Kendi Projelerimizle Yüksek Performanslı Akıllı Otomasyon",
+    "titleRgb": "Çözümlerimiz",
+    "paragraph": "Biz, kendi projelerimizde güçlü otomasyon çözümleri geliştirerek iş süreçlerini daha verimli hale getirmeye çalışıyoruz. Zaman, hataları azaltan ve maliyetleri kontrol altına alan sistemlerimizle, işlerimizi en verimli şekilde yönetmeye odaklanıyoruz.",
+    "cardTitle1": "Zamanı Verimli Kullanalım",
+    "cardDesc1": "Geliştirdiğimiz otomasyon çözümleri ile projelerimizde zamanı en verimli şekilde kullanıyoruz. İş süreçlerini hızlandırarak her dakikayı daha değerli hale getiriyoruz.",
+    "cardTitle2": "Hataları Azaltmak",
+    "cardDesc2": " otomasyon sayesinde hataları minimize ediyor ve süreçlerin doğruluğunu artırıyoruz. Hem güvenliği sağlıyor hem de verimliliği arttırıyoruz.",
+    "cardTitle3": "Maliyetleri Kontrol Altına Alalım",
+    "cardDesc3": "Kendi projelerimizde maliyetleri azaltmak için verimli iş süreçleri geliştiriyoruz. Düşük bütçelerle yüksek performans elde  yollarını arıyoruz."
+  },
+
+  "Innovation": {
+    "title": "Yenilikçi Çözümler",
+    "titleRgb": "Geleceği Şekillendir",
+    "paragraph": "Teknolojiyi ve inovasyonu birleştirerek işletmelerin dijital dönüşümüne katkı sağlıyoruz. Yaratıcı çözümlerimizle geleceğin dünyasına adım atın.",
+    "icontitle1": "Akıllı Çözümler",
+    "icontitle2": "Dijital Zekâ",
+    "icontitle3": "Girişim Hızı",
+    "icontitle4": "Yapay Zeka"
+  },
+
+  "Projects": {
+    "head": "Projelerimiz",
+    "paragraph": "Tekera Teknoloji olarak farklı sektörlere özel modern çözümler geliştiriyoruz.",
+    "BtnText": "Siteyi Gör",
+    "project1": {
+      "description": "Kadın modasına özel modern bir e-ticaret platformu.",
+      "name": "ArzuAmber"
+    },
+    "project2": {
+      "description": "Yeni projemiz çok yakında burada yer alacak!",
+      "name": "Yeni Proje"
+    }
+  },
+
+  "FeaturedCards": {
+    "digitalIntelligence": {
+      "title": "Dijital Zekâ",
+      "description": "Veriyle yönlendirilen kararlarla işinizi ileriye taşıyın."
+    },
+    "smartCloud": {
+      "title": "Akıllı Bulut",
+      "description": "Her yerden erişim, maksimum performans ve esneklik."
+    },
+    "strongSecurity": {
+      "title": "Güçlü Güvenlik",
+      "description": "Verilerinizi en yeni teknolojilerle koruyun."
+    },
+    "automationPower": {
+      "title": "Otomasyon Gücü",
+      "description": "Tekrarlayan işleri otomatikleştirerek zaman kazanın."
+    },
+    "fastDevelopment": {
+      "title": "Hızlı Gelişim",
+      "description": "Projelerinizi kısa sürede başarıya ulaştırın."
+    },
+    "creativity": {
+      "title": "Yaratıcılık",
+      "description": "Fikirlerinizi dijital çözümlerle hayata geçirin."
+    }
+  },
+
+  "footer": {
+    "companyDesc": "Tekera,  dijital dönüşümüne öncülük eden bir teknoloji firmasıdır. Web ve veri çözümleriyle geleceğe yön verir.",
+    "copyright": " Tekera. Tüm hakları saklıdır."
   }
 }
