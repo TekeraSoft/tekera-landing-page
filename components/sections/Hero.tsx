@@ -8,7 +8,7 @@ function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative h-[70vh] mt-28 md:mt-32 flex justify-center items-center">
+    <section className="relative h-[70vh] mt-24 md:mt-52 lg:mt-32 flex justify-center items-center">
       <Container className="flex flex-col lg:flex-row gap-5 lg:gap-12">
         <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
           <span className="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl opacity-60 lg:opacity-95 lg:block bg-gradient-to-r from-teal-600 to-violet-400 blur-xl hidden"></span>

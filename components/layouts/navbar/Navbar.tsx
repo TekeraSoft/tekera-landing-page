@@ -110,7 +110,6 @@ function Navbar() {
                 className="w-10 h-8 text-heading-1 flex items-center justify-center border border-slate-300 rounded-md cursor-pointer text-xs font-semibold uppercase transition duration-500"
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                 onMouseLeave={() => setIsLangDropdownOpen(false)}
-                onMouseEnter={() => setIsLangDropdownOpen(true)}
               >
                 {locale}
               </button>
