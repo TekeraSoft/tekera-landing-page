@@ -25,7 +25,7 @@ function Hero() {
             {t("paragraph")}
           </Paragraph>
         </div>
-        <div className="flex flex-1 lg:w-1/2 h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+        <div className="flex flex-1 lg:w-1/2 h-auto relative lg:max-w-none lg:mx-0 mx-8 md:mx-auto max-w-3xl">
           <div className="relative w-96 h-40 md:h-96">
             <Image
               src="/images/2.jpg"

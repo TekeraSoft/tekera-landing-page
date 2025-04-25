@@ -68,7 +68,10 @@ function FeaturedCards() {
   ];
 
   return (
-    <div id="fatured-cards" className="flex justify-center items-center">
+    <div
+      id="fatured-cards"
+      className="flex justify-center items-center mt-40 md:mt-0"
+    >
       <Container className="relative pb-32">
         {/* Arka plan tasarımı */}
         <div className="absolute inset-0 -z-10 pointer-events-none">

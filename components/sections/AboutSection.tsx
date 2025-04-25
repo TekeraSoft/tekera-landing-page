@@ -74,7 +74,7 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative flex  text-foreground dark:text-foreground-dark"
+      className="relative flex  text-foreground dark:text-foreground-dark  md:mt-0"
     >
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute top-10 left-10 w-48 h-48 bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 opacity-60 rotate-30 blur-xl" />

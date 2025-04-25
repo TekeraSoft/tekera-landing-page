@@ -49,7 +49,7 @@ function Navbar() {
   };
 
   return (
-    <header className="fixed bg-body inset-x-0 top-0 z-50 py-6">
+    <header className="fixed bg-body inset-x-0 top-0 z-50 py-3  md:py-6">
       <div className="flex md:hidden">
         <div
           className={`${

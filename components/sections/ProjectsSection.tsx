@@ -50,7 +50,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="relative h-screen flex flex-col justify-center items-center "
+      className="relative h-screen flex flex-col justify-center items-center mt-32 md:mt-0"
     >
       {/* Arka plan efektleri */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
