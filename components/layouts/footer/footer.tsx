@@ -48,7 +48,7 @@ function Footer() {
   return (
     <footer
       id="contact"
-      className="relative pt-20 pb-10 bg-box-bg text-heading-1 rounded-t-3xl"
+      className="relative pt-20 pb-10 bg-box-bg text-heading-1 rounded-t-3xl f"
     >
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="absolute top-10 left-10 w-48 h-72 bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 opacity-45 rotate-45 blur-3xl" />
