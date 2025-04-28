@@ -45,8 +45,8 @@ export const DigitalTransformationSection = () => {
         {/* Sol: Görsel */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/images/4.jpg"
-            alt="Dijital Dönüşüm"
+            src="/images/tekera-landing-2.jpg"
+            alt="tekera-landing-2.jpg"
             width={500}
             height={500}
             className="rounded-xl shadow-lg"

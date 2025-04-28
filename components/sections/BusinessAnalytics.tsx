@@ -45,8 +45,8 @@ export const BusinessAnalyticsSection = () => {
         {/* Sağ: Görsel */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/images/3.jpg"
-            alt="İş Zekası ve Analitik"
+            src="/images/tekera-landing-3.jpg"
+            alt="tekera-landing-3.jpg"
             width={500}
             height={500}
             className="rounded-xl shadow-lg"

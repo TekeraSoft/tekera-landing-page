@@ -28,8 +28,8 @@ function Hero() {
         <div className="flex flex-1 lg:w-1/2 h-auto relative lg:max-w-none lg:mx-0 mx-8 md:mx-auto max-w-3xl justify-center items-center">
           <div className="relative w-96 h-40 md:h-96">
             <Image
-              src="/images/2.jpg"
-              alt="Tekera Teknoloji"
+              src="/images/tekera-landing-1.jpg"
+              alt="tekera-landing-1.jpg"
               width={1000}
               height={1000}
               className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96"
