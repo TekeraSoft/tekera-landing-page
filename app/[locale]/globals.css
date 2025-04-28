@@ -41,6 +41,26 @@
   .text-featured-card-title {
     color: rgb(var(--color-primary));
   }
+
+  .navbar-border-b {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0 0 0); /* Light modda siyah */
+  }
+
+  .dark .navbar-border-b {
+    border-bottom-color: rgb(255 255 255); /* Dark modda beyaz */
+  }
+}
+
+@media (min-width: 1200) {
+  /* md ve sonrası */
+  .navbar-border-b {
+    border-bottom-color: rgb(229 231 235); /* md ve üstü light modda gri */
+  }
+  .dark .navbar-border-b {
+    border-bottom-color: rgb(156 163 175); /* md ve üstü dark modda açık gri */
+  }
 }
 
 html {

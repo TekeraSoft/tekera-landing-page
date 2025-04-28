@@ -20,10 +20,10 @@ export const AboutSection = () => {
   useEffect(() => {
     gsap.fromTo(
       "#about",
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: 100 },
       {
         opacity: 1,
-        y: 0,
+        y: 150,
         duration: 1,
       }
     );

@@ -50,7 +50,7 @@ function Navbar() {
   };
 
   return (
-    <header className="fixed bg-body inset-x-0 top-0 z-50 py-3 ">
+    <header className="fixed bg-body inset-x-0 top-0 z-50 py-2 sm:py-2 border-box-border lg:border-b text-heading-2  ">
       <div className="flex md:hidden">
         <div
           className={`${
@@ -68,15 +68,14 @@ function Navbar() {
           </ul>
         </div>
       </div>
-      <Container>
+      <Container className="">
         <nav className="w-full flex items-center justify-between gap-6 relative">
           {/* Logo */}
           <div className="min-w-max inline-flex items-center gap-1 relative">
             <Image
               src={theme === "dark" ? darkLogo : whiteLogo}
               alt="Tekera Teklonogy Logo"
-              width={80}
-              height={80}
+              className="w-auto h-12 sm:h-20"
               priority
             />
           </div>
@@ -88,7 +87,7 @@ function Navbar() {
               } flex flex-col lg:flex-row w-full lg:justify-between lg:items-center absolute top-full left-0 lg:static lg:top-0 bg-body lg:bg-transparent border-x border-x-box-border lg:border-x-0 lg:h-auto overflow-hidden p-1 transition-all duration-300`}
             >
               <ul
-                className="border-t border-box-border lg:border-t-0 px-6 lg:px-0 
+                className="border-t border-box-border  lg:border-t-0 px-6 lg:px-0 
                      pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 
                      text-lg text-heading-2 w-full lg:justify-center lg:items-center"
               >
@@ -105,7 +104,7 @@ function Navbar() {
               onMouseLeave={() => setIsLangDropdownOpen(false)}
             >
               <button
-                className="w-10 h-8 text-heading-1 flex items-center justify-center border border-slate-300 rounded-md cursor-pointer text-xs font-semibold uppercase transition duration-500"
+                className="w-8 h-7 sm:w-10 sm:h-8 text-heading-1 flex items-center justify-center border border-slate-300 rounded-md cursor-pointer  text-xs font-semibold uppercase transition duration-500"
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                 onMouseLeave={() => setIsLangDropdownOpen(false)}
               >
@@ -113,7 +112,7 @@ function Navbar() {
               </button>
               {isLangDropdownOpen && (
                 <ul
-                  className="absolute top-8 w-10 bg-white border border-slate-300  rounded shadow-md text-sm "
+                  className="absolute top-8 w-10 bg-white border border-slate-300  rounded shadow-md text-xs md:text-sm "
                   onMouseEnter={() => setIsLangDropdownOpen(true)}
                 >
                   {supportedLocales.map((lang, index) => (
@@ -131,7 +130,7 @@ function Navbar() {
             </div>
             <button
               onClick={toggleTheme}
-              className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer"
+              className="outline-hidden flex relative text-heading-2 rounded-full p-1 sm:p-2 lg:p-3 border border-box-border cursor-pointer"
             >
               {theme === "dark" ? (
                 <MdDarkMode className="w-5 h-5" />
@@ -146,9 +145,9 @@ function Navbar() {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 {isMenuOpen ? (
-                  <FaTimes className="w-6 h-6" />
+                  <FaTimes className=" w-5 h-5 sm:w-6 sm:h-6" />
                 ) : (
-                  <FaBars className="w-6 h-6" />
+                  <FaBars className=" w-5 h-5 sm:w-6 sm:h-6" />
                 )}
               </button>
             </div>

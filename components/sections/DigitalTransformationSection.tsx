@@ -19,7 +19,7 @@ export const DigitalTransformationSection = () => {
       { opacity: 0, y: 50 },
       {
         opacity: 1,
-        y: 0,
+        y: 150,
         duration: 1,
         scrollTrigger: {
           trigger: "#digital-transformation",
