@@ -71,8 +71,10 @@ function Navbar() {
       <Container className="">
         <nav className="w-full flex items-center justify-between gap-6 relative">
           {/* Logo */}
-          <div className="min-w-max inline-flex items-center gap-1 relative">
+
+          <div className="min-w-max inline-flex items-center gap-1 relative cursor-pointer">
             <Image
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               src={theme === "dark" ? darkLogo : whiteLogo}
               alt="Tekera Teklonogy Logo"
               className="w-auto h-12 sm:h-20"
