@@ -89,10 +89,11 @@ function Footer() {
             <h4 className="text-lg font-semibold mb-4">İletişim</h4>
             <div className="flex flex-col gap-5">
               <p className="flex items-center gap-2 text-sm ">
-                <FaEnvelope className="text-primary text-xl" /> info@tekera.com
+                <FaEnvelope className="text-primary text-xl" />
+                info@tekeratechnology.com
               </p>
               <p className="flex items-center gap-2 text-sm ">
-                <FaPhoneAlt className="text-primary text-xl" /> +90 (534) 168 83
+                <FaPhoneAlt className="text-primary text-xl" /> +90 (534) 268 83
                 85
               </p>
 
