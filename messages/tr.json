@@ -94,13 +94,14 @@
     "paragraph": "Tekera Teknoloji olarak farklı sektörlere özel modern çözümler geliştiriyoruz.",
     "BtnText": "Siteyi Gör",
     "project1": {
-      "description": "Kadın modasına özel modern bir e-ticaret platformu.",
+      "description": "Kadın modasına dair en trend ve şık parçaları keşfetmek için tasarlanmış modern bir e-ticaret platformu. Şıklığı, rahatlığı ve özgünlüğü bir araya getirerek, her kadının tarzına hitap eden benzersiz koleksiyonlarla alışveriş deneyiminizi zirveye taşıyoruz.",
       "name": "ArzuAmber"
     },
     "project2": {
-      "description": "Yeni projemiz çok yakında burada yer alacak!",
-      "name": "Yeni Proje"
-    }
+      "description": "Tekera21, online pazarın yükselen yıldızı! Yenilikçi ürünleri ve kullanıcı dostu arayüzü ile alışveriş deneyiminizi bambaşka bir boyuta taşıyor. Projemiz şu an geliştirilme aşamasında, ama yakın zamanda harika bir deneyim sizi bekliyor!",
+      "name": "Tekera21"
+    },
+    "ComingSoon": "Bu proje şu an geliştirilme aşamasında. Güncellemeler için takipte kalın!"
   },
 
   "FeaturedCards": {

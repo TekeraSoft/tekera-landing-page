@@ -93,13 +93,14 @@
     "paragraph": "At Tekera Teknoloji, we develop modern solutions tailored to various industries.",
     "BtnText": "View Site",
     "project1": {
-      "description": "A modern e-commerce platform dedicated to women's fashion.",
+      "description": "A modern e-commerce platform designed to discover the trendiest and most stylish pieces in women's fashion. By combining elegance, comfort, and uniqueness, we elevate your shopping experience with exclusive collections that cater to every woman's style.",
       "name": "ArzuAmber"
     },
     "project2": {
-      "description": "Our new project will be available here soon!",
-      "name": "New Project"
-    }
+      "description": "Tekera21, the rising star of the online market! With its innovative products and user-friendly interface, it takes your shopping experience to a whole new level. Our project is currently in development, but an amazing experience awaits you soon!",
+      "name": "Tekera21"
+    },
+    "ComingSoon": "This project is currently under development. Stay tuned for updates!"
   },
 
   "FeaturedCards": {

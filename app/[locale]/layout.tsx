@@ -47,7 +47,10 @@ export default async function RootLayout({
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content="/images/og-image.jpg" />
-            <meta property="og:url" content="https://www.tekera.com" />
+            <meta
+              property="og:url"
+              content="https://www.tekeratechnology.com"
+            />
             <meta property="og:type" content="website" />
 
             {/* Twitter Cards */}

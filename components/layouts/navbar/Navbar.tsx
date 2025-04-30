@@ -77,7 +77,7 @@ function Navbar() {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               src={theme === "dark" ? darkLogo : whiteLogo}
               alt="Tekera Teklonogy Logo"
-              className="w-auto h-12 sm:h-20"
+              className="w-auto h-12 sm:h-16"
               priority
             />
           </div>
@@ -90,8 +90,8 @@ function Navbar() {
             >
               <ul
                 className="border-t border-box-border  lg:border-t-0 px-6 lg:px-0 
-                     pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 
-                     text-lg text-heading-2 w-full lg:justify-center lg:items-center"
+                     pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-8 
+                     text-lg text-heading-2 w-full lg:justify-center lg:items-center "
               >
                 {navItems.map((item, key) => (
                   <NavItem href={item.href} text={item.text} key={key} />
@@ -132,7 +132,7 @@ function Navbar() {
             </div>
             <button
               onClick={toggleTheme}
-              className="outline-hidden flex relative text-heading-2 rounded-full p-1 sm:p-2 lg:p-3 border border-box-border cursor-pointer"
+              className="outline-hidden flex relative text-heading-2 rounded-full p-1 sm:p-2  border border-box-border cursor-pointer"
             >
               {theme === "dark" ? (
                 <MdDarkMode className="w-5 h-5" />
